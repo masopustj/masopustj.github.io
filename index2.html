@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabulka z Power Automate</title>
+</head>
+<body>
+    <h1>Data z Power Automate</h1>
+    <div id="table-container">
+        <!-- Zde se vloží tabulka -->
+    </div>
+    <script>
+        // Funkce pro vložení HTML tabulky přijaté z Power Automate
+        function insertTable(htmlTable) {
+            document.getElementById('table-container').innerHTML = htmlTable;
+        }
+
+        // Příklad testovací tabulka
+        var htmlTable = '<table border="1"><tr><th>Jméno</th><th>Věk</th></tr><tr><td>Elinka</td><td>2</td></tr></table>';
+        insertTable(htmlTable);
+    </script>
+</body>
+</html>
