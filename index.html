@@ -1,24 +1,65 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabulka z Power Automate</title>
+    <meta http-equiv="refresh" content="10"> <!-- Refreshes the page every 10 seconds -->
+    <title>Auto Refresh Page</title>
+<style>
+h1 {
+    font-size: 1.4em;
+    font-family: sans-serif;
+    background-color: #009879;
+    color: white; /* Text color */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px; /* Padding inside the border */
+    text-align: center; /* Center-align the text */
+    width: fit-content; /* Fit the width of the content */
+    min-width: 410px;
+    margin: left;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 450px;
+    border-radius: 15px;
+    overflow: hidden; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+table th,
+table td {
+    padding: 12px 15px;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+</style>
 </head>
 <body>
-    <h1>Data z Power Automate</h1>
-    <div id="table-container">
-        <!-- Zde se vloží tabulka -->
-    </div>
-    <script>
-        // Funkce pro vložení HTML tabulky přijaté z Power Automate
-        function insertTable(htmlTable) {
-            document.getElementById('table-container').innerHTML = htmlTable;
-        }
-
-        // Příklad testovací tabulka
-        var htmlTable = '<table border="1"><tr><th>Jméno</th><th>Věk</th></tr><tr><td>Elinka</td><td>2</td></tr></table>';
-        insertTable(htmlTable);
-    </script>
+<h1>Obsazení laboratoře dne 03.10.2024</h1>
+<table><thead><tr><th>N&#225;zev</th><th>Zač&#225;tek</th><th>Konec</th></tr></thead><tbody><tr><td>Testovac&#237; ud&#225;lost 2</td><td>06:00</td><td>08:00</td></tr><tr><td>Testovac&#237; ud&#225;lost</td><td>16:00</td><td>18:00</td></tr></tbody></table>
 </body>
 </html>
